@@ -1,0 +1,125 @@
+<?xml version="1.0"  encoding="iso-8859-1"?>
+<!DOCTYPE  html PUBLIC "-//WC3//DTD XHTML 1.0 Transitional//
+<html xmlns="http://wwww.w3.org/1999/xht,l" lang=esE xml: lang="es">
+
+ <head>
+   <title>INTRODUCCION A LA PROGRAMACIÓN</title>
+<script>
+var cont=0
+function cambia() {
+cont++;
+switch(cont%4+1)
+ {
+ case 1:
+ document.getElementById("fotocambia").src="https://image.slidesharecdn.com/capitulo07operadoresyexpresiones-111126025745-phpapp01/95/operadores-y-expresiones-16-728.jpg?cb=1336823445";
+ break;
+ case 2:
+ document.getElementById("fotocambia").src="http://www.carlospes.com/curso_de_algoritmos/imagenes/fig_07_01_operadores_aritmeticos.gif";
+ break;
+ case 3:
+ document.getElementById("fotocambia").src="https://www.monografias.com/trabajos105/programacion-cientifica/img5.png";
+ break;
+ case 4:
+ document.getElementById("fotocambia").src="https://slideplayer.es/slide/3908036/12/images/20/Expresiones+Booleanas.jpg";
+ break;
+ }
+
+}
+function inicio() {
+setInterval(cambia, 3000);
+}
+window.onload=inicio;
+</script>   
+<style type="text/css">
+    #grande {
+        z-index: -999;
+        width: 100%; 
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        left: 0;        
+        opacity: 0.3;
+            }
+   #container {
+      width: 600px;
+      margin: 0 auto;
+}
+.zoom img{
+height: 100px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.zoom img:hover {
+height: 366px;
+width: 800px;
+margin: -50px;
+}
+   </style>
+
+      </head>
+ <body>
+    <img src="PRO.jpg" 
+     id="grande" > 
+     <p><b><font size=7>EXPRESIONES</font></b> </p>
+  
+    <p><font size=5>Una expresión es una secuencia de uno o más operandos y cero o más operadores que se pueden evaluar como un valor, objeto, método o espacio de nombres único. Las expresiones pueden constar de un valor literal, una invocación de método, un operador y sus operandos o un nombre simple. Los nombres simples pueden ser el nombre de una variable, el miembro de un tipo, el parámetro de un método, un espacio de nombres o un tipo.
+    </font></p> 
+         <br>
+	<dl><font size=7><b>OPERADORES</b></font><br><br>
+		<br><dt><font size=5>Un operador es un símbolo en una expresión que representa una operación aplicada a los valores sobre los que actúa. Los valores sobre los que actúa un operador se llaman operandos. Un operador binario es el que tiene dos operandos, mientras que un operador unario es el que tiene sólo uno.</font></dt><br>
+			<dd><font size=6><b><i>OPERADORES ARITMETICOS</i></b></font></dd><br>
+				<ul>
+					<li type="square"><font size=5><i>SUMA</i></font></li>
+					<li type="square"><font size=5><i>RESTA</i></font></li>					
+					<li type="square"><font size=5><i>MULTIPLICACION</i></font></li>
+					<li type="square"><font size=5><i>DIVISION</i></font></li>
+					<li type="square"><font size=5><i>MÓDULO</i></font></li>
+					<li type="square"><font size=5><i>POTENCIA</i></font></li>
+				</ul>
+		<br><dt><font size=6><b><i>OPERADORES RELACIONALES</i></b></font></dt><br>
+			<dd><font size=5>Las operaciones relacionales sirven para comparar valores. Sus operandos son cualquier cosa que pueda ser comparada, y sus resultados siempre son valores lógicos.</font></dd><br>
+				<ol>
+					<li><i><font size=5>Igual a ==</font></i></li>	
+					<li><i><font size=5>Distinto a !=</font></i></li>	
+					<li><i><font size=5>Mayor que ></font></i></li>	
+					<li><i><font size=5>Menor que <</font></i></li>	
+					<li><i><font size=5>Menor o igual que <=</font></i></li>	
+	
+		<br><dt><font size=6><b><i>OPERACIONES LOGICAS</i></b></font></dt><br>
+			<dd><font size=5>Los operadores lógicos son los que tienen operandos y resultado de tipo lógico.</font></dd>
+    				<ul>
+					<li type="circle"><font size=5<i>La conjunción lógica and (en español: «y»)</i></font></li>
+					<li type="circle"><font size=5<i>La disyunción lógica or (en español: «o»)</i></font></li>
+					<li type="circle"><font size=5<i>La negación lógica not (en español: «no»)</i></font></li>
+				</ul>
+		<br><dt><font size=6><b><i>OPERADORES DE TEXTO</i></b></font></dt><br>
+			<dd><font size=5>Los operadores + y * tienen otras interpretaciones cuando sus operandos son strings. El signo + es el operador de concatenación de strings: pega dos strings uno después del otro</font></dd><br>
+				<ol>
+					<li><i><font size=5>obtener el i-ésimo caracter de un string (partiendo desde cero) usando los corchetes</font></i></li>
+					<li><i><font size=5>comprarar strings alfabéticamente con los operadores relacionales (lamentablemente no funciona con acentos y eñes)</font></i></li>
+					<li><i><font size=5>obtener el largo de un string con la función len</font></i></li>
+					<li><i><font size=5>verificar si un string está dentro de otro con el operador in</font></i></li>
+				</ol>
+	</dl>
+
+<div id="container">
+       <div class="zoom">
+<center><img id="fotocambia" src="https://image.slidesharecdn.com/capitulo07operadoresyexpresiones-111126025745-phpapp01/95/operadores-y-expresiones-16-728.jpg?cb=1336823445"></center>
+<br><br><br><br>
+	<center><a href="pagina3.html">
+	REGRESAR A LA ANTOLOGIA </a></center>
+<div align="left">
+<a href="pag7.html">
+	PAGINA ANTERIOR </a>
+<div align="right">
+<a href="pag9.html">
+	PAGINA SIGUIENTE </a>
+</body>
+</html>
+
+
+

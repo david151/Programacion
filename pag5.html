@@ -1,0 +1,92 @@
+<?xml version="1.0"  encoding="iso-8859-1"?>
+<!DOCTYPE  html PUBLIC "-//WC3//DTD XHTML 1.0 Transitional//
+<html xmlns="http://wwww.w3.org/1999/xht,l" lang=esE xml: lang="es">
+
+ <head>
+   <title>INTRODUCCION A LA PROGRAMACIÓN</title>
+   <style type="text/css">
+    #grande {
+        z-index: -999;
+        width: 100%; 
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        left: 0;        
+        opacity: 0.3;
+            }
+   #container {
+      width: 600px;
+      margin: 0 auto;
+}
+.zoom img{
+height: 100px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.zoom img:hover {
+height: 366px;
+width: 800px;
+margin: -50px;
+}
+   </style>
+
+      </head>
+ <body>
+    <img src="PRO.jpg" 
+     id="grande" > 
+     <p>
+      <b>
+        <font size=7>
+         <center>DIAGRAMA DE NASSI SCHNEIDERMAN O CHAPIN</center>
+        </font>
+       </b> 
+      </p>
+  
+    <p><font size=5></p></font> 
+	<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Multiple_Branching.jpg/480px-Multiple_Branching.jpg"width="550" height="300"></center>
+	<br>
+    <p><font size=5> Este diagrama también es conocido como estructograma, ya que sirve para representar la estructura de los programas. Combina la descripción textual del pseudocódigo con la representación gráfica del diagrama de flujo. Basado en un diseño top-down (de lo complejo a lo simple), el problema que se debe resolver se divide en subproblemas cada vez más pequeños - y simples - hasta que solo queden instrucciones simples y construcciones para el control de flujo.
+	</font></p>
+	<dl><font size=5><b>TIPOS DE DIAGRAMAS</b><br><br> 
+		<dt><font size=5><i>BLOQUES DE PROCESOS</i></font></dt><br>
+			<dd><font size=5> El bloque de proceso representa el paso mas simple y no requiere ningún análisis específico.Cuando un bloque de proceso es encontrado, la acción dentro del bloque se realiza, y pasamos directamente al siguiente bloque</font></dd>		
+		<center><p><a href="https://commons.wikimedia.org/wiki/File:Process_Block2.jpg#/media/File:Process_Block2.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Process_Block2.jpg" alt="Process Block2.jpg"></a><br>De Ben Honan - <span class="int-own-work" lang="es">Trabajo propio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=4755653">Enlace</a></p></center>
+		<br>
+		<dt><font size=5><i>BLOQUES RAMIFICADOS</i></font></dt><br>
+			<dd><font size=5>Hay dos tipos de estos bloques:</font></dd>
+		<ul>
+		<li type="square">El primero y más sencillo de ellos es el bloque verdadero-falso el cual ofrece al programa dos caminos para tomar, dependiendo de si una determinada condición ha sido especificada. Estos bloques pueden ser usados como bucles que detienen el programahasta que una determinada condición se cumpla.</li>
+		<center><p><a href="https://commons.wikimedia.org/wiki/File:Two-Way_Branch.jpg#/media/File:Two-Way_Branch.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Two-Way_Branch.jpg" alt="Two-Way Branch.jpg"></a><br>De Ben Honan - <span class="int-own-work" lang="es">Trabajo propio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=4755664">Enlace</a></p></center>
+		<li type="square">El segundo tipo es un bloque ramificado múltiple. Este tipo de bloque es utilizado cuando se necesita la selección de un caso en un programa . El bloque suele contener una pregunta. Además, el bloque le da al programa una cadena de oportunidades y es generalmente usado en las conjunciones con bloques de subprocesos para ahorrar espacio.</li>
+		<center><p><a href="https://commons.wikimedia.org/wiki/File:Multiple_Branching.jpg#/media/File:Multiple_Branching.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Multiple_Branching.jpg" alt="Multiple Branching.jpg"></a><br>De Ben Honan - <span class="int-own-work" lang="es">Trabajo propio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=4755770">Enlace</a></p></center>
+		</ul>
+		<br>
+		<dt><font size=5><i>BUCLES TESTEADORES</i></font></dt><br>
+			<dd><font size=5>Este bloque permite al programa repetir un bloque o un conjunto de bloques hasta que una determinada condición se haya cumplido.</font></dd><br>
+		<ul>Hay dos tipos de Bloques:
+		<br>
+		<li type="circle">Testeo Inicial: En los de la primera situcaión, cuando el programa encuentra el bloque, testea si la condición necesaria se cumple, si no, se repite el bucle. El test se repite hasta que se cumpla dicha condición. En el nivel que se cumpla la condición, el programa detiene la ejecución del blucle y pasa a analizar los bloques del siguiente nivel.</li>
+		<center><p><a href="https://commons.wikimedia.org/wiki/File:Test_First.jpg#/media/File:Test_First.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Test_First.jpg" alt="Test First.jpg"></a><br>De Ben Honan - <span class="int-own-work" lang="es">Trabajo propio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=4755774">Enlace</a></p></center>
+		<li type="circle">Testeo final:Los de testeo final operan al revés.</li>
+		<center><p><a href="https://commons.wikimedia.org/wiki/File:Test_Last.jpg#/media/File:Test_Last.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Test_Last.jpg" alt="Test Last.jpg"></a><br>De Ben Honan - <span class="int-own-work" lang="es">Trabajo propio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=4755781">Enlace</a></p></center>
+		</ul>
+
+		
+<br><br><br><br>
+	<center><a href="pagina3.html">
+	REGRESAR A LA ANTOLOGIA </a></center>
+<div align="right">
+<a href="pag4.html">
+	PAGINA ANTERIOR </a>
+<div align="left">
+<a href="pag6.html">
+	PAGINA SIGUIENTE</a>
+</body>
+</html>
+
+
+

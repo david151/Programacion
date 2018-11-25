@@ -1,0 +1,90 @@
+<?xml version="1.0"  encoding="iso-8859-1"?>
+<!DOCTYPE  html PUBLIC "-//WC3//DTD XHTML 1.0 Transitional//
+<html xmlns="http://wwww.w3.org/1999/xht,l" lang=esE xml: lang="es">
+
+ <head>
+   <title>FILOSOFIA</title>
+<script>
+var cont=0
+function cambia() {
+cont = cont % 2;
+if (cont==1){
+document.getElementById("fotocambia").src="pseu.jpg";
+}
+else{
+document.getElementById("fotocambia").src="diag.jpg";
+}
+cont++;
+}
+function inicio() {
+setInterval(cambia, 5000);
+}
+window.onload=inicio;
+</script>
+   <style type="text/css">
+    #grande {
+        z-index: -999;
+        width: 100%; 
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        left: 0;        
+        opacity: 0.3;
+            }
+   #container {
+      width: 600px;
+      margin: 0 auto;
+}
+.zoom img{
+height: 100px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.zoom img:hover {
+height: 366px;
+width: 800px;
+margin: -50px;
+}
+   </style>
+
+      </head>
+ <body>
+    <img src="PRO.jpg" 
+     id="grande" > 
+     <p>
+      <b>
+        <font size=7>
+         PSEUDOCODIGO Y DIAGRAMA DE FLUJO.
+        </font>
+       </b> 
+      </p>
+	<dl>
+		<br><br><br><dt><font size=7><b>PSEUDOCODIGO</b></font></dt>
+		<br><br><br>
+			<dd><font size=6>Se emplea cuando se pretende describir un algoritmo sin la necesidad de difundir cuáles son sus principios básicos. De esta manera, un ser humano encontrará mayores facilidades para comprender el mensaje, a diferencia de lo que ocurriría si estuviese frente a un lenguaje de programación real.</font></dd>
+		<br><br><br>
+		<dt><font size=7><b>DIAGRAMA DE FLUJO</b></font></dt>
+		<br><br><br>
+			<dd><font size=6>Son aquellos gráficos representativos que se utilizan para esquematizar conceptos vinculados a la programación, la economía, los procesos técnicos y/o tecnológicos, la psicología, la educación y casi cualquier temática de análisis. Pueden abordar muchos temas distintos de formas también muy diferentes.</font></dd>
+	</dl>
+<div id="container">
+       <div class="zoom">
+         <center><img id="fotocambia" src="pseu.jpg"></center>
+<br><br><br><br>
+	<center><a href="pagina3.html">
+	REGRESAR A LA ANTOLOGIA </a></center>
+<div align="right">
+<a href="pag2.html">
+	PAGINA ANTERIOR </a>
+<div align="left">
+<a href="pag5.html">
+	PAGINA SIGUIENTE</a>
+</body>
+</html>
+
+
+

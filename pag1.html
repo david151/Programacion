@@ -1,0 +1,108 @@
+<?xml version="1.0"  encoding="iso-8859-1"?>
+<!DOCTYPE  html PUBLIC "-//WC3//DTD XHTML 1.0 Transitional//
+<html xmlns="http://wwww.w3.org/1999/xht,l" lang=esE xml: lang="es">
+
+ <head>
+   <title>FILOSOFIA</title>
+<script>
+var cont=0
+function cambia() {
+cont++;
+switch(cont%4+1)
+ {
+ case 1:
+ document.getElementById("fotocambia").src="pic1.jpg";
+ break;
+ case 2:
+ document.getElementById("fotocambia").src="pic2.png";
+ break;
+ case 3:
+ document.getElementById("fotocambia").src="pic3.jpg";
+ break;
+ case 4:
+ document.getElementById("fotocambia").src="pic4.jpg";
+ break;
+ }
+
+}
+function inicio() {
+setInterval(cambia, 3000);
+}
+window.onload=inicio;
+</script>
+
+   <style type="text/css">
+    #grande {
+        z-index: -999;
+        width: 100%; 
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        left: 0;        
+        opacity: 0.3;
+            }
+   #container {
+      width: 600px;
+      margin: 0 auto;
+}
+.zoom img{
+height: 100px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.zoom img:hover {
+height: 366px;
+width: 800px;
+margin: -50px;
+}
+   </style>
+
+      </head>
+ <body>
+   <img src="PRO.JPG" 
+     id="grande" > 
+     <p>
+      <b>
+        <font size=7>
+         ¿QUE ES LA PROGRAMACIÓN?
+        </font>
+       </b> 
+      </p>
+  
+    <h2>Es el proceso de tomar un algoritmo y codificarlo en una notación, un lenguaje de programación, de modo que pueda ser ejecutado por una computadora. Aunque existen muchos lenguajes de programación y muchos tipos diferentes de computadoras, el primer paso es la necesidad de tener una solución. Sin un algoritmo no puede haber un programa.
+    </h5>
+	<center>
+	<img id="fotocambia" src="pic1.jpg" width="350" height="250">
+	</center>
+	<br>
+    <p><font size=5> Es una parte importante de lo que hace un científico de la computación. La programación es a menudo la manera en la que creamos una representación para nuestras soluciones. Por tanto, esta representación en un lenguaje y el proceso de crearla se convierte en una parte fundamental de la disciplina.
+    </font></p>
+	<dl><font size=5>La programación puede seguir muchos enfoques, o paradigmas, es decir, diversas maneras de formular la resolución de un problema dado. Algunos de los principales paradigmas de la programación son:</font>
+		<br><br>
+		<dt><b><font size=6>PROGRAMACION DECLARATIVA</font></b></dt>
+			<dd><font size=5>Está basado en el desarrollo de programas especificando o "declarando" un conjunto de condiciones, proposiciones, afirmaciones, restricciones, ecuaciones o transformaciones que describen el problema y detallan su solución. La solución es obtenida mediante mecanismos internos de control, sin especificar exactamente cómo encontrarla (tan solo se le indica a la computadora qué es lo que se desea obtener o qué es lo que se está buscando). No existen asignaciones destructivas, y las variables son utilizadas con transparencia referencial.</dd>
+		<dt><b><font size=6>PROGRAMACION ESTRUCURADA</font></b></dt>
+			<dd>Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora recurriendo únicamente a subrutinas y tres estructuras básicas: secuencia, selección (if y switch) e iteración (bucles for y while); asimismo, se considera innecesario y contraproducente el uso de la instrucción de transferencia incondicional (GOTO), que podría conducir a código espagueti, mucho más difícil de seguir y de mantener, y fuente de numerosos errores de programación.</dd>
+		<dt><b><font size=6>PROGRAMACION MODULAR</font></b></dt>
+			<dd>Consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más legible y manejable. Se presenta históricamente como una evolución de la programación estructurada para solucionar problemas de programación más grandes y complejos de lo que esta puede resolver.</dd>
+		<dt><b><font size=6>PROGRAMACION ORIENTADA A OBJETOS</font></b></dt>
+			<dd>La programación orientada a objetos (POO, u OOP según sus siglas en inglés) es un paradigma de programación que viene a innovar la forma de obtener resultados. Los objetos manipulan los datos de entrada para la obtención de datos de salida específicos, donde cada objeto ofrece una funcionalidad especial.</dd>
+		</dl>
+
+<div id="container">
+       <div class="zoom">
+         <center><img alt="imagen1" src="TIPOS.jpg" /></center>
+<br><br><br><br>
+	<center><a href="pagina3.html">REGRESAR A LA ANTOLOGIA </a></center>
+<div align="left">
+<a href="pag2.html">PAGINA SIGUIENTE</a>
+    </body>
+</html>
+
+
+
+
